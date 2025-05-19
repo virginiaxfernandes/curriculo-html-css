@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/aba.png">
+    <title>Formulário</title>
+</head>
+<body>
+  <div id="page" class="container">
+    <header class="container header">
+     <nav>
+            <ul class="header__menu">
+                <li><a href="/index.html" target ="main">Currículo</a></li>
+            </ul>
+     </nav>
+     </header>
+     <section class="formulario" id="formulario" aria-label="Formulário">
+           <h2 class="subtitulo">Formulário de Freelancer</h2>
+    <form>
+ <fieldset>
+    <div>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome">
+    </div> 
+    <div>
+        <label>Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+          </div>
+          <div>
+        <label>Telefone</label>
+        <input type="tel" name="telefone" id="telefone">
+          </div>
+          <div>
+  <label>E-mail</label>
+  <input type="email" name="email" id="email">
+</div>
+<div>
+ <label>Mensagem</label>
+  <textarea id="mensagem" name="mensagem" rows="3" cols="30"> </textarea>
+</div>
+<div>
+  <label>Lingua</label>
+  <select id="lingua">
+<option>Português-BR</option>
+<option>Inglês</option>
+  </select>
+</div>
+<div>
+     <label class="required">Upload do Protótipo</label>
+     <input type="file" name="prototipo" id="prototipo" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required class="file-input">
+    <div id="prototipoError" class="error"></div>
+</div>
+<fieldset>
+  <label>As linguagens que você prefere?</label>
+        <select multiple size="4" name="linguagens" id="linguagens">
+            <option value="Java">Java</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+                <p>(Para fazer várias escolhas, mantenha a tecla CTRL pressionada)</p>
+</fieldset>
+<div>
+  <label>Banco de dados</label>
+  <label>
+    <input type="radio" name="banco" value="MySQL">MySQL
+  </label>
+  <label>
+     <input type="radio" name="banco" value= "Postgresql">Postgresql
+  </label>
+  <label>
+     <input type="radio" name="banco" value= "MongoDB">MongoDB
+  </label>
+   <label>
+     <input type="radio" name="banco" value= "N/A">N/A
+  </label>
+   <label>
+     <input type="radio" name="banco" value= "Outra">Outra
+  </label>
+</div>
+<div>
+  <label>Turno para reuniões</label>
+  <label>
+    <input type="radio" name="reunioes" value="Manhã">Manhã
+  </label>
+  <label>
+     <input type="radio" name="reunioes" value= "Tarde">Tarde
+  </label>
+  <label>
+     <input type="radio" name="reunioes" value= "MongoDB">Noite
+  </label>
+</div>
+ <div>
+      <label>Horário Sugerido</label>
+      <input type="time" name="horario_sugerido" id="horario_sugerido" min="09:00" max="18:00" step="1800">
+      <p class="instruction">Selecione um horário entre 08:00 e 20:00 </p>
+ </div>
+ <div>
+         <label class="required">Data Prevista Entrega</label>
+         <input type="date" name="data_entrega" id="data_entrega" required>
+ </div>
+ <div class="buttons">
+    <p>
+        <button type="submit">Enviar</button>
+        <button type="reset" id="limparBtn">Limpar</button>
+    </p>
+</div>
+</fieldset>
+   </form>
+<center>
+        <footer>Copyright © 2025 Virgínia Fernandes. Todos os Direitos Reservados.</footer>
+    </center>
+     </section>
+    </div>
+    <iframe name="main"
+          width="1080"
+          height="520"
+          frameborder="0">
+    </iframe>
+</body>
+    </html>
